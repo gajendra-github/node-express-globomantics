@@ -11,4 +11,9 @@ inside package.json file
 
 morgan	:	logs web traffic
 
+nodemon :   a command-line tool used for developing node.js application. 
+            It monitors changes in the files of Node.js project and automatically
+            restarts the application.
+
+            
 

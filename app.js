@@ -8,8 +8,6 @@ const morgan = require('morgan');
 //no need to install path, comes out of the box as part of nodejs
 const path = require('path');
 
-
-
 //instance of express and execute
 const app = express();
 
@@ -27,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.listen(3000, () => {
     //console.log(`listening on port ${chalk.green('3000')}`);
-    debug(`listening on port ${chalk.green('3000')}`);
+    debug(`listening to port ${chalk.green('3000')}`);
 });
 
 
