@@ -17,7 +17,7 @@ app.use(morgan('tiny'));            //logs minimum info..
 //express.static helper function sets up a middleware to handle static files
 //locate static files in the file system with path.join()
 //__dirname ~ variable name comes bundled into node ~ 
-app.use(express.static(path.join(__dirname, 'node-express-globomantics/public/')));
+app.use(express.static(path.join(__dirname, '/public/')));
 
 app.get('/', (req, res) => {
     res.send('Building Application With NodeJs and Express...');
