@@ -1,0 +1,10 @@
+
+
+debug	:	only runs on debug mode not in production
+debug(`listening on port ${chalk.green('3000')}`);
+$ DEBUG=* node app.js	(to run from console)
+
+
+morgan	:	logs web traffic
+
+
