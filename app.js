@@ -8,6 +8,9 @@ const morgan = require('morgan');
 //no need to install path, comes out of the box as part of nodejs
 const path = require('path');
 
+const PORT = process.env.PORT || 3000;
+
+
 //instance of express and execute
 const app = express();
 
@@ -27,9 +30,9 @@ app.get('/', (req, res) => {
     res.send('Building Application With NodeJs and Express...');
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     //console.log(`listening on port ${chalk.green('3000')}`);
-    debug(`listening to port ${chalk.green('3000')}`);
+    debug(`listening to port ${chalk.green(PORT)}`);
 });
 
 
