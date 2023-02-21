@@ -21,6 +21,8 @@ app.use(morgan('tiny'));            //logs minimum info..
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log(`Folder location: ${__dirname}`);
+
 app.get('/', (req, res) => {
     res.send('Building Application With NodeJs and Express...');
 });
