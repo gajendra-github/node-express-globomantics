@@ -29,6 +29,8 @@ Commit and push your changes to GitHub.
 
 Run the npm run deploy command to deploy your application to GitHub Pages.
 
+$npm run deploy
+
 After following these steps, your static files should be served correctly from 
 the "public" folder on your GitHub Pages site
 
