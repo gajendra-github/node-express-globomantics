@@ -22,12 +22,18 @@ app.use(morgan('tiny'));            //logs minimum info..
 //__dirname ~ variable name comes bundled into node ~ 
 //app.use(express.static(path.join(__dirname, '/public/')));
 
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, '/public/')));
 
-console.log(`Folder location: ${__dirname}`);
+//console.log(`Folder location: ${__dirname}`);
+
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
+
 
 app.get('/', (req, res) => {
-    res.send('Building Application With NodeJs and Express...');
+    //res.send('Building Application With NodeJs and Express...');
+    res.render('index', { title: 'Welcome to Globomantics' });
 });
 
 app.listen(PORT, () => {
