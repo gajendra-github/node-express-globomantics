@@ -19,7 +19,7 @@ app.use(morgan('tiny'));            //logs minimum info..
 //__dirname ~ variable name comes bundled into node ~ 
 //app.use(express.static(path.join(__dirname, '/public/')));
 
-app.use(express.static(path.join(__dirname, public, index.html)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     res.send('Building Application With NodeJs and Express...');
