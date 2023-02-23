@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     //res.send('Building Application With NodeJs and Express...');
-    res.render('index', { title: 'Welcome to Globomantics' });
+    res.render('index', { title: 'Welcome to Globomantics', data: ['a', 'b', 'c'] });
 });
 
 app.listen(PORT, () => {
