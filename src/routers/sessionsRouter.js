@@ -19,7 +19,7 @@ sessionsRouter.route('/').get((req, res) => {
         let client;
 
         try {
-            client = await MongoClient.connect(url);
+            client = await MongoClient.connect(url, { connectTimeoutMS: 600000 });
             res.send('Hello');
         } catch (error) {
             console.log(error.stack);
