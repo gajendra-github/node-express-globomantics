@@ -17,7 +17,7 @@ sessionsRouter.route('/').get((req, res) => {
     const url = 'mongodb+srv://dbUser:m8bYPccxSv2rfP71@cluster0.n6wmrai.mongodb.net?retryWrites=true&w=majority';
 
     const dbName = 'globomantics';
-
+    console.log('1');
     (async function mongo() {
         let client;
 
