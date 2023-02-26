@@ -11,7 +11,21 @@ const sessionsRouter = express.Router();
 
 
 sessionsRouter.route('/').get((req, res) => {
-    res.send('Hi');
+    const url = 'mongodb+srv://dbUser:m8bYPccxSv2rfP71@cluster0.n6wmrai.mongodb.net?retryWrites=true&w=majority';
+    const dbName = 'globomantics';
+
+    (async function mongodb() {
+
+        let client;
+
+        try {
+            client = await MongoClient.connect(url);
+            res.send('Hello');
+        } catch (error) {
+            console.log(error.stack);
+        }
+    }());
+    //res.send('Hi');
 });
 
 
