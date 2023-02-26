@@ -19,7 +19,11 @@ sessionsRouter.route('/').get((req, res) => {
         let client;
 
         try {
-            client = await MongoClient.connect(uri);
+            client = await MongoClient.connect(uri, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+            });
+
             res.send('Hello');
         } catch (error) {
             console.log(error.stack);
