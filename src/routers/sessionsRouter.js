@@ -29,7 +29,7 @@ sessionsRouter.route('/').get((req, res) => {
             console.log(error.stack);
         }
     }());
-    //res.send('Hi');
+    //res.send('Hi'); 
 });
 
 
