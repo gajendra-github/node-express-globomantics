@@ -3,7 +3,7 @@ const debug = require('debug')('app:sessionRouter');
 const { MongoClient, ObjectId } = require('mongodb');
 const sessionsRouter = express.Router();
 
-const uri = process.env.MONGO_URI;
+
 
 
 sessionsRouter.route('/').get((req, res) => {
