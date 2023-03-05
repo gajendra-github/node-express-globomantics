@@ -4,14 +4,14 @@ const { MongoClient, ObjectId } = require('mongodb');
 const sessionsRouter = express.Router();
 
 const uri = process.env.MONGO_URI;
-  
+
 
 //TgIcS9PLpQgbC6y6
 //mongodb+srv://dbUser:TgIcS9PLpQgbC6y6@cluster0.n6wmrai.mongodb.net/
 //mongodb+srv://dbUser:TgIcS9PLpQgbC6y6@cluster0.n6wmrai.mongodb.net?retryWrites=true&w=majority
 
 sessionsRouter.route('/').get((req, res) => {
- 
+
 
     //const url = 'mongodb+srv://dbUser:m8bYPccxSv2rfP71@cluster0.n6wmrai.mongodb.net?retryWrites=true&w=majority';
     const uri = process.env.MONGO_URI;
